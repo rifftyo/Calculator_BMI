@@ -1,0 +1,208 @@
+:root {
+  font-size: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  --primary-blue: #657e79;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "arial";
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.split-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  height: 750px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.right {
+  background: #f6f5f3;
+}
+
+.right .copy {
+  color: black;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.right p {
+  font-weight: 400;
+}
+.left .copy {
+  color: black;
+  text-align: center;
+}
+.left .copy p {
+  margin: 1.5em 0;
+  font-size: 0.875rem;
+}
+.left form {
+  width: 328px;
+}
+
+form input[type="number"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #c4c4c4;
+  padding: 1em;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.hitung-btn {
+  display: block;
+  width: 100%;
+  background: var(--primary-blue);
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hitung-btn:hover {
+  background: #576966;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 900px) {
+  .split-screen {
+    flex-direction: row;
+    height: 100vh;
+  }
+  .left,
+  .right {
+    display: flex;
+    width: 50%;
+    height: auto;
+  }
+}
+
+.hasilBMI {
+  font-size: 1.3rem;
+  color: solid black;
+  font-weight: 570;
+}
+
+.bmiAnda {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #657e79;
+}
+
+.berdasarkan {
+  font-size: 1.3rem;
+  font-weight: 570;
+}
+
+.category {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #657e79;
+}
+
+#ideal {
+  font-size: 1.3rem;
+  font-weight: 570;
+}
+
+#angkaIdeal {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #657e79;
+}
+
+#hide {
+  width: 100%;
+  max-width: 50vh;
+  text-align: justify;
+}
+
+#hr1,
+#hr2,
+#hr3 {
+  display: none;
+}
+
+#konsultasi {
+  flex: 1 0 10rem;
+  display: none;
+  background: #35b782;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#konsultasi:hover {
+  background: #2fa173;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#hitungLagi {
+  flex: 1 0 10rem;
+  display: none;
+  background: var(--primary-blue);
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#hitungLagi:hover {
+  background: #576966;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fluid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.inlineC {
+  display: flex;
+}

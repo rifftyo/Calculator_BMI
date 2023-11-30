@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Icon-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./image/favicon-32x32.png"
+    />
+    <title>Kalkulator BMI</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--JavaScript-->
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="split-screen">
+      <!--Bagan Kiri-->
+      <div class="left">
+        <!--Form Start-->
+        <form name="bmiForm" onsubmit="hitungBMI(event)">
+          <section class="copy">
+            <h1>Kalkulator BMI</h1>
+            <p>Gunakan kalkulator ini untuk menghitung BMI Anda</p>
+          </section>
+          <!--Input Tinggi Badan-->
+          <div class="height-input">
+            <label for="tinggi">Tinggi badan</label>
+            <input
+              id="tinggi"
+              name="tinggi"
+              placeholder="Tinggi dalam cm"
+              type="number"
+              required
+            />
+          </div>
+          <!--Input Berat Badan-->
+          <div class="weight-input">
+            <label for="berat">Berat badan</label>
+            <input
+              id="berat"
+              name="berat"
+              placeholder="Berat dalam kg"
+              type="number"
+              required
+            />
+          </div>
+          <!--Tombol Hitung BMI-->
+          <button class="hitung-btn" type="submit" id="hitung">
+            Hitung BMI
+          </button>
+        </form>
+      </div>
+      <br />
+      <br />
+      <!--Bagan Kanan-->
+      <div class="right">
+        <section class="copy">
+          <p id="hide">
+            Gunakan kalkulator ini untuk memeriksa indeks massa tubuh (BMI)
+            Anda, yang dapat menjadi alat yang berguna dalam menentukan kategori
+            berat badan Anda.
+          </p>
+          <!--Output-->
+          <div class="hasilBMI" id="hasilBMI"></div>
+          <div class="bmiAnda" id="bmiAnda"></div>
+          <hr id="hr1" />
+          <br />
+          <div class="berdasarkan" id="berdasarkan"></div>
+          <div class="category" id="category"></div>
+          <hr id="hr2" />
+          <br />
+          <!--testing fitur-->
+          <div id="ideal"></div>
+          <div id="angkaIdeal"></div>
+          <hr id="hr3" />
+          <!--testing fitur-->
+          <br />
+          <div id="rekomendasi"></div>
+          <br />
+          <!--Experimental-->
+          <div class="fluid">
+            <button onclick="hitungLagi()" id="hitungLagi">Hitung Lagi</button>
+            <!--Tombol Konsultasi Dokter-->
+            <button
+              id="konsultasi"
+              onclick="window.open('https://www.halodoc.com/', '_blank')"
+            >
+              Konsultasi Dokter
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
